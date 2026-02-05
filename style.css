@@ -468,8 +468,6 @@ img {
       border-radius: 14px;
       font-size: .95rem;
     }
-
-    /* Trust strip */
     .strip{
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -504,7 +502,6 @@ img {
     }
     .fact p{margin:0; color: var(--muted); font-size: .98rem}
 
-    /* Modal */
     dialog{
       width: min(760px, calc(100% - 22px));
       border: 1px solid rgba(255,255,255,.18);
@@ -604,7 +601,6 @@ img {
       margin: 6px 0 0;
     }
 
-    /* Footer (pro) */
     footer{
       margin-top: 28px;
       border-top: 1px solid rgba(255,255,255,.10);
@@ -703,7 +699,6 @@ img {
       100%{box-shadow: 0 0 0 0 rgba(124,255,209,0)}
     }
 
-    /* Reveal animations */
     .reveal{
       opacity: 0;
       transform: translateY(10px);
@@ -718,17 +713,13 @@ img {
       *{animation:none !important; transition:none !important; scroll-behavior:auto !important}
       .reveal{opacity:1; transform:none}
     }
-/* =========================
-   CSS (pegar dentro del <style> de tu página)
-   ========================= */
 
-/* Gate overlay: bloquea la UI si la pantalla es pequeña */
 .gate[hidden] { display: none !important; }
 
 .gate{
   position: fixed;
   inset: 0;
-  z-index: 999999; /* por encima de todo */
+  z-index: 999999; 
   display: grid;
   place-items: center;
   padding: clamp(14px, 3vw, 28px);
@@ -808,7 +799,7 @@ img {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   font-size: clamp(.98rem, .92rem + .25vw, 1.08rem);
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
 }
 
 .gate__meta{
